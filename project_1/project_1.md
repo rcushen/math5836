@@ -1,12 +1,8 @@
-# Part A: Case I- Classification
+  # Part A: Case I- Classification
 
 Imagine yourself as a data scientist and build a neural network model using the given data sets.
 
 ## Case I - Classification
-
-Refer to the respective documentation for the given data sets by clicking on the below links.
-
-Parkinson Speech data set for classification  use only train dataset, discard the test dataset. Create train/test split from train dataset. column 28: UPDRS  - Please remove this column - do not use it as a feature.
 
 ### Instructions
 
