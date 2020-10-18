@@ -1,12 +1,26 @@
-  # Part A: Case I- Classification
+# Assessment 2
+## Overview
 
-Imagine yourself as a data scientist and build a neural network model using the given data sets.
+| Key | Value |
+|---|---|
+| Type | Written Report |
+| Weight | 20% |
+| Due Date | Friday  Week 7 (30th October) at 10.00pm |
 
-## Case I - Classification
+The assessment is split into two parts:
 
-### Instructions
+* **Part A.** You will complete this part of the assessment using Python or R in Ed. You will develop the learning model using the prescribed neural-network techniques and submit the model through the Ed platform. Consider the following steps to build and evaluate the model:
+  * Understand the given problem and identify the respective inputs and outputs of the proposed model.
+  * Break down your data mining task into the following sub-tasks:
+  * Analyse the given data
+  * Prepare the data for computational analysis
+  * Build a model using the prescribed machine learning techniques
+  * Evaluate the model using evaluation metrics.
+* **Part B.** Write a report to describe the steps performed to develop the model and evaluate its performance. Provide written justifications, with clearly articulated reasons, for the steps you took to build the model.
 
-Clean the above data sets with data processing code and then prepare them for modelling using neural networks. Build a model using the neural network model either using Keras or scikit-learn in Python or R. Understand the given problem and identify the respective inputs and outputs of the proposed model.
+## Part A: Case 1 (Classification)
+
+Clean the data sets with data processing code and then prepare them for modelling using neural networks. Build a model either using Keras or scikit-learn in Python or R.
 
 Consider the following steps to build and evaluate the model:
 
@@ -20,8 +34,20 @@ Evaluate the best model using a confusion matrix and show ROC and AUC, Precision
 
 Note that task 2 to 5 would require 10 experimental runs for each case where you report mean and 95% confidence interval. You need to select the appropriate metrics, i.e., for classification report performance on the train and test data set. You are free to you your personal computers for running experiments and uploading the results/code on Ed later.  You must upload code on Ed and ensure code can run on Ed (where N=1) for experiments. Ensure that you demonstrate the use of functions/methods in your code and you are free to separate or clump some of the methods/functions together.
 
-### How to submit
+## Part A: Case 2 (Regression)
 
-Click on the submit button to submit your solution file as classificationmodel.py with processed data as data.csv and code, process.py
+Financial time series prediction. Select any stock-market dataset from  NASDAQ and use neural networks for multi-step ahead (5-step-ahead prediction).  The goal here to see the effect of COVID-19 on prediction accuracy.  (Updated 14th October, you can do this with 1 stock market dataset, 2 stocks is not a requirement but it's okay if you wish to present results with 2 stocks. )
 
-Note you can also submit using R. replace .py with .r in your filename.
+
+You can do trial experiments to determine the model architecture, training algorithm (SGD vs Adam) and dropouts vs weight decay, etc for one dataset, i.e a 60-40 percent train and test split for the data set (consider data for the last 3 years from the day you begin your Project). You can provide one investigation after another, eg, compare SGD vs Adam first, then use the one which is better for checking topology, and then regularisation techniques. You need to do 10 experiments for each case as usual.
+
+Next, you create two datasets in the following way.
+* The training set features data prior to COVID-19. Test set features data during COVID-19 (i.e January till now). Note based on the country of the stock, COVID-19 dates will be determined by you.
+* The training set features data prior to COVID-19 + first 50 % of data during COVID-19. The test set features the other 50 % data during COVID-19.
+
+Use your best model architecture, learning algorithm, etc, and regularisation to compare the prediction accuracy of the
+
+
+Note each of the above tasks should be the methods or functions in your main program.
+
+Run 10 experimental runs and report mean and std RMSE and show visualizations for typical prediction from the best experiment for each case. Discuss your results and report major conclusions about the effect of COVID-19 on stock market predictions.
